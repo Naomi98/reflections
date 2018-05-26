@@ -1,0 +1,52 @@
+How did viewing a diff between two versions of a file help you see the bug that
+was introduced?
+
+    As only the differences between any two files was visible, it was easier to
+	spot the difference. This helped in finding the bug in the file.
+
+How could having easy access to the entire history of a file make you a more
+efficient programmer in the long term?
+
+    It helps in viewing a number of versions of a file. This can help later in
+	comparing the various versions so as to see the difference that has been made. 
+	Also, we can have a timeline of what, how and when the particular changes in 
+	the file were made.
+
+What do you think are the pros and cons of manually choosing when to create a
+commit, like you do in Git, vs having versions automatically saved, like Google
+docs does?
+
+    The pros are that each commit will have a meaningful logic. It would not end
+	abruptly which can be the case in google Docs. Also, it would be more 
+	compatible for the user. The cons are that sometimes a user can forget to make
+	the commit required which can lead to no versions made.
+
+Why do you think some version control systems, like Git, allow saving multiple
+files in one commit, while others, like Google Docs, treat each file separately?
+
+    Many files can be interrelated to each other. It is not compulsory that all
+	the files present in a repository are independent. So, in that case, changes 
+	made in one file may effect in other files as well. Thus it allows multiple 
+	files to save in one commit.
+
+How can you use the commands git log and git diff to view the history of files?
+
+    These commands can be used to view the commits that have been made in the 
+	files in a repository. The git log command is used to view all the commits
+	in a repository along with the commit ID, author name and a commit message. 
+	The git diff command is used to compare any two versions of a file within 
+	git.
+
+How might using version control make you more confident to make changes that
+could break something?
+
+    By using version control and finding the bug using various changes definitely
+	boosted my confidence. It encouraged me by telling that even though it was small,
+	I was able to find a bug. I was able to shift between different versions of 
+	the game. Also, it helps in making changes without the fear of breaking the whole
+	project. that is because, I could always revert back to any previous version. 
+
+Now that you have your workspace set up, what do you want to try using Git for?
+
+    I would like to learn and explore Git more. I want to be able to make contributions
+	to projects and make my own repository. 
