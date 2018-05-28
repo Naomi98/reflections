@@ -2,3 +2,47 @@ When would you want to use a remote repository rather than keeping all your work
   Whenever I am making a project that involves many collaborators. In this case, the 
   repository is required to be shared by many people and thus remote is made. By keeping 
   everything local, it cannot be shared and accessed by people from other places.
+
+Why might you want to always pull changes manually rather than having Git automatically 
+stay up-to-date with your remote repository?
+  This is because, it is not always ncessary that we want our remote and local repository
+  to be exactly same. Sometimes, we want some changes to remain only in local repository 
+  that we do not want to make public and other times, we do not want changes on remote to
+  show upin our local repository. Thus, automatic pull is not suitable in all cases.
+  
+Describe the differences between forks, clones, and branches. When would you use one instead
+of another?
+  Branches operate on a single repository while both forks and clones are for more than one
+  repositories. Cloning is when another repository is made using the link of the original 
+  one. However, cloning is quite different from copying. Cloning is done when we want to 
+  clone a repository from remote into our system or clone a repository from our system only. 
+  Forking is like cloning that GitHub do for you. That is, instead of first pulling a 
+  repository, and then making a clone, we can directly fork a repository on GitHub.
+  
+What is the benefit of having a copy of the last known state of the remote stored locally?
+  This helps inkeeping two branches one which is in sync with the branch on GitHub and one
+  which is a local branch to the syatem. This way we can keep track of local changes as 
+  well as changes made on GitHub branch (which can be made by other collaborators) 
+  separately. If required, these two can be merged later on but it helps keep track of 
+  changes local and on remote repository isolated from one another till then.
+  
+How would you collaborate without using Git or GitHub? What would be easier, and what 
+would be harder?
+  Without using Git or GitHub, I will have to face a lot of problems. It will be an inefficient
+  and time consuming task. This will require that I make certain changes to my project and 
+  then other collaborator will make his/her own changes. We would have to look out for
+  what changes have to be kept and which have to be removed while making a completely new
+  update. Though we will be working simultaneously but the projct won't be making in sync.
+  In fact, each collaborator's work won't have any relation to the other's work. this could
+  lead to a lot of problems while collaborating. 
+  
+  Surely, using Git and GitHub makes the work quite easier and saves a lot of time.
+  
+When would you want to make changes in a separate branch rather than directly in master?
+What benefits does each approach have?
+
+  We would want to make changes separately whenever we are trying some new experiment that
+  we may or may not want to include in the master branch yet. As these changes could be
+  faulty or unnecessary. This approach has the benefits that our experimental branch can
+  be kept isolated from the main branch and we can make a pull request in order for other
+  collaborators to see and merge if fault-free and suitable.
