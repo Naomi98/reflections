@@ -1,0 +1,4 @@
+When would you want to use a remote repository rather than keeping all your work local?
+  Whenever I am making a project that involves many collaborators. In this case, the 
+  repository is required to be shared by many people and thus remote is made. By keeping 
+  everything local, it cannot be shared and accessed by people from other places.
