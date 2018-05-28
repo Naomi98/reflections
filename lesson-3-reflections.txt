@@ -46,3 +46,38 @@ What benefits does each approach have?
   faulty or unnecessary. This approach has the benefits that our experimental branch can
   be kept isolated from the main branch and we can make a pull request in order for other
   collaborators to see and merge if fault-free and suitable.
+  
+The Git commands and concepts used in this lesson are:
+$git remote – to view and create remotes
+$git remote add origin <url of the repository> - push an existing repository from Git bash
+to the GitHub
+$git remote –v – v stands for verbose 
+
+We can change the remote directly i.e. changes which are present on GitHub but aren’t there
+on local repository. 
+
+$git push <remote> <local branch> - used to send changes to the remote.
+
+$git pull <remote> <branch you want to pull> - used to bring changes from GitHub into local
+repository.
+
+Forking – it is like cloning that GitHub do for you. That is, instead of first pulling a 
+repository, and then making a clone, we can directly fork a repository on GitHub. 
+
+We can update just the local copy of the remote branch while leaving the actual local branch
+alone by using the command git fetch.
+$git fetch <remote branch name> - update the local copy of the remote branch
+
+$git pull origin master = (is equivalent to) $git fetch origin and $git merge master 
+origin/master altogether
+
+Fast-forward merges are when the branch you are merging into is an ancestor of the branch 
+you are merging from. 
+
+By git pull origin master command, since the master branch is checked out so it will also 
+update the working directory and staging area.
+Also, since pull request is not a feature of Git but GitHub, therefore, it won’t affect the 
+local master branch.
+By committing a change, it does not get removed from the staging area.
+
+Pushing a branch automatically updates the pull request on GitHub. 
