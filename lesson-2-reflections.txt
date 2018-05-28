@@ -52,3 +52,59 @@ manually?
 	be a wastage of time and efforts. But it may also improve accuracy as no merges 
 	will take place that ae not desired. Also, some conflicts are to be resolved 
 	manually only so this helps in that case.
+	
+Git commands and concepts used upto this lesson:
+In Windows, there is a tool in command prompt called FC (File compare) that is used to 
+compare two files.
+In Linux and Mac, the tool is called Diff (difference)
+
+Ex:
+>FC favapp-old.html favapp-new.html (used in Windows command prompt)
+$diff -u favapp-old.html favapp-new.html (used in Linux, Mac or GitBash)
+
+$git log – to display what commits have been made
+$git log –stat – it is used for more statistics like number of insertions and deletions
+
+$git clone <url of the repository> – it clones a repository from GitHub or any other repository
+on your own system into your system
+
+$git checkout – it is used to go back to any previous version of the file.
+$git init – it initializes or creates a new git repository
+
+.git – this is a hidden file that indicates that the following directory is a repository and 
+is present in it but not visible unless listed using the command “ls –a”
+$git status – it shows which files have changed since the last commit
+
+Staging area – add files from the working directory here one at a time and then when we are 
+ready to commit then Git bundles the entire content of Staging area into a single commit and
+add it to the repository. 
+$git add <filename> – add files to the staging area
+
+$git commit 
+$git commit –m “Commit message”
+
+$git diff id1 id2 – to check the difference between any two commits
+$git diff (with no arguments) – compare the working directory with staging area. Changes made 
+which haven’t been added to the staging area yet.
+$git diff –staged – this is to show the difference between the staging area and the most 
+recent commit
+$git reset –hard – it discards any changes in the working directory or the staging area 
+(irreversible since none of these have been committed so they can’t be recovered again)
+
+$git branch (with no arguments) – view branches
+$git branch branch-name – create new branch with that name
+$git checkout branch-name – used to switch to the new branch created
+
+$git checkout –b new-branch-name – this command is equivalent to $git branch new-branch-name
+and then $git checkout new-branch-name combined.
+
+Remote branch – I didn’t create it myself, some other collaborator did.
+$git log –graph –oneline master coins – this is used to display the branch structure
+
+Merging two branches
+$git merge master coins – it is used to merge the mentioned branches into one
+
+$git show commit id – this shows the changes made in this commit by comparing it with its 
+parent commit without actually adding the parent ID.
+
+$git branch –d coins – this is used to delete a branch
